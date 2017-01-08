@@ -1,0 +1,51 @@
+/* The styles for the elements */
+
+
+
+h4{
+    padding: 0px 10px;
+    color:#d36161
+}
+
+h5{
+    padding: 0px 10px;
+    color:#777373;
+    float: right;
+}
+
+p{
+    padding: 0px 10px;
+    color:#ceafaf
+}
+
+a.view {
+    color: #2da1c1;
+    font-size: small;
+    text-decoration: none;
+    float: right;
+}
+a.view:hover
+{
+    color: #f90;
+    text-decoration: underline;         
+}
+a{
+    padding: 0px 10px;
+}
+.aboutus{
+    background-color:white;
+    font-size: 14px;
+}
+
+img {
+    width: 30%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    height: auto;
+}
+
+.imgwrapper {
+   width: 100%;
+}

@@ -1,0 +1,101 @@
+/* The styles for the elements */
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+    font-size: 85%;
+    margin-left: 2em;
+    margin-right: 2em;
+    
+}
+h1 {     
+    color: #ffc3a0;
+    font-family: verdana;
+    font-size: 300%;
+    margin-bottom: .5em;    
+}
+label {
+    float: left;
+    width: 8em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+span {
+    margin-left: 0.5em;    
+    margin-bottom: 0.5em;    
+}
+br {
+    clear: both;
+}
+
+/* The styles for the classes */
+.pad_top {
+    padding-top: 0.5em;
+}
+.margin_left {
+    margin-left: 0.5em;
+}
+
+/* The styles for the tables */
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50em;
+    padding: .5em;
+}
+th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: .5em;
+    
+}
+th{
+    color: #DE6262;
+}
+.right {
+    text-align: right;
+}
+
+
+/* The styles for displaying forms and buttons */
+.inline {
+    display: inline;
+}
+.confirm_button {
+    width: 5em;
+}
+#codeBox, #priceBox {
+    width: 6em;
+}
+
+.cart{
+    float:right;
+}
+
+h4{
+    padding: 0px 10px;
+    color:#d36161;
+    
+}
+
+h5{
+    padding: 0px 10px;
+    color:#777373;
+    float: right;
+}
+
+#Container-1 {
+    height: 100%;
+    width: 100%;
+    display: table;
+  }
+  #Container-2 {
+    vertical-align: middle;
+    display: table-cell;
+    height: 100%;
+  }
+  #Table {
+    margin: 0 auto;
+  }
+ 
+ 

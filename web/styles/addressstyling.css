@@ -1,0 +1,39 @@
+/*style for elements*/
+fieldset{
+    width:600px;
+}
+
+
+legend{
+    font-size: 30px;
+    font-weight: bold;
+    color: #DE6262
+}
+label.address{
+    text-align: right;
+    width:100px;
+    float:left;
+    font-weight: bold;
+    color: #DE6262;
+}
+
+input.textbox-400{
+    width: 400px;
+    float:left;
+}
+
+fieldset p{
+    clear:both;
+    padding:5px;
+}
+
+.style{
+   width:600px; 
+   margin:0 auto;
+}
+
+@media (max-width: 599px) {
+  .style {
+    width: 100%;
+  }
+}

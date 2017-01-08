@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/CrossRoads">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" 
+            logAbandoned="true" maxActive="100" maxIdle="30" maxWait="10000" 
+            name="jdbc/menu" password="admin" removeAbandoned="true" 
+            removeAbandonedTimeout="60" type="javax.sql.DataSource" 
+            url="jdbc:mysql://localhost:3306/menu" username="root"/>
+</Context>

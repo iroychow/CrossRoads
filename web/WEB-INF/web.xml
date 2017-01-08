@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee  http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>registercontroller</servlet-name>
+        <servlet-class>music.controller.registercontroller</servlet-class>
+    </servlet>
+    
+        
+    <servlet>
+        <servlet-name>CheckPasswordServlet</servlet-name>
+        <servlet-class>music.controller.CheckPasswordServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>controller</servlet-name>
+        <url-pattern>/menu</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controller</servlet-name>
+        <url-pattern>/productMaint</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>*.htm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registercontroller</servlet-name>
+        <url-pattern>/registercontroller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckPasswordServlet</servlet-name>
+        <url-pattern>/CheckPasswordServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <!--<servlet>
+        <servlet-name>ProductIO</servlet-name>
+        <servlet-class>music.data.ProductIO</servlet-class>
+    </servlet>-->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/applicationContext.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>controller</servlet-name>
+        <servlet-class>music.controller.controller</servlet-class>
+    </servlet>
+    <!--<servlet-mapping>
+        <servlet-name>ProductIO</servlet-name>
+        <url-pattern>/productmaint</url-pattern>
+    </servlet-mapping>-->
+    <welcome-file-list>
+        <welcome-file>redirect.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
